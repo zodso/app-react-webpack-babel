@@ -1,0 +1,28 @@
+export const START_LOADING = "START_LOADING";
+export const SHOW_LAYER = "SHOW_LAYER";
+
+export const REQUEST_GENRES = "REQUEST_GENRES";
+export const RECEIVE_GENRES = "RECEIVE_GENRES";
+export const GET_GENRES_FAIL = "GET_GENRES_FAIL";
+
+export const REQUEST_MOVIES = "REQUEST_MOVIES";
+export const RECEIVE_MOVIES = "RECEIVE_MOVIES";
+export const REMOVE_MOVIES = "REMOVE_MOVIES";
+export const GET_MOVIES_FAIL = "GET_MOVIES_FAIL";
+
+export const REQUEST_MOVIE = "REQUEST_MOVIE";
+export const RECEIVE_MOVIE = "RECEIVE_MOVIE";
+export const GET_MOVIE_FAIL = "GET_MOVIE_FAIL";
+
+export const ITEM_ADDED = "ITEM_ADDED";
+export const ITEM_REMOVED = "ITEM_REMOVED";
+
+export const REQUEST_CART = "REQUEST_CART";
+export const RECEIVE_CART = "RECEIVE_CART";
+export const GET_CART_FAIL = "GET_CART_FAIL";
+
+export const REQUEST_SEARCH = "REQUEST_SEARCH";
+export const RECEIVE_SEARCH = "RECEIVE_SEARCH";
+export const SEARCH_STARTED = "SEARCH_STARTED";
+export const SEARCH_STOPPED = "SEARCH_STOPPED";
+export const GET_SEARCH_FAIL = "GET_SEARCH_FAIL";

@@ -1,0 +1,104 @@
+.movie {
+  background-color: #f7f7f7;
+  min-height: calc(100vh - 55px);
+  &-detail {
+    padding: 26px;
+    @media screen and (min-width: 600px) {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      @media screen and (min-width: 600px) {
+        width: 25%;
+      }
+    }
+
+    &__info {
+      @media screen and (min-width: 600px) {
+        padding: 0 26px;
+      }
+
+      h2 {
+        font-size: 23px;
+        padding-bottom: 12px;
+
+        span {
+          display: inline-block;
+          padding-right: 12px;
+
+          &.date {
+            font-size: 26px;
+            color: #a6a6a6;
+            font-weight: normal;
+          }
+        }
+      }
+
+      .adult {
+        background-color: #e60a13;
+        color: #fff;
+        border-radius: 3px;
+        width: auto;
+        padding: 3px 10px;
+        font-size: 12px;
+        line-height: 13px;
+      }
+
+      h3 {
+        padding: 10px 0;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 18px;
+        padding-bottom: 12px;
+      }
+
+      .votes {
+        p {
+          display: inline-block;
+          padding-right: 12px;
+
+          span {
+            padding: 2px 8px;
+            background-color: #ff7522;
+            border-radius: 6px;
+            color: #fff;
+            display: inline-block;
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .view-more {
+        background-color: #e60a13;
+        color: #fff;
+        padding: 5px 12px;
+        margin-bottom: 12px;
+        display: inline-block;
+        border-radius: 3px;
+        text-decoration: none;
+        font-size: 12px;
+      }
+
+      .add-to-cart {
+        background-color: #07a707;
+        border: 0;
+        padding: 12px;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        outline: none;
+        &:disabled {
+          background-color: #9c0006;
+          color: #a6a6a6;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}

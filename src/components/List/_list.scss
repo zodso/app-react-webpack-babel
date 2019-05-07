@@ -1,0 +1,36 @@
+.list {
+  height: calc(100vh - 55px);
+  overflow: auto;
+  padding-bottom: 240px;
+  &-movies {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    &__movie {
+      padding: 16px;
+      flex-basis: 25%;
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 100%;
+        border-radius: 3px;
+        padding-bottom: 5px;
+      }
+      h2 {
+        font-size: 15px;
+        padding-bottom: 8px;
+      }
+      p {
+        line-height: 18px;
+        font-size: 13px;
+        position: relative;
+        &:after {
+          content: "...";
+          position: absolute;
+        }
+      }
+    }
+  }
+}

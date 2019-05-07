@@ -1,0 +1,50 @@
+.home {
+  h1 {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: italic;
+  }
+}
+.list {
+  &-genres {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    &__genre {
+      padding: 8px;
+      flex-basis: 25%;
+      a {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+        padding: 20px 10px;
+        transition: all 0.112s linear 0s;
+        cursor: pointer;
+        &:hover {
+          background-color: #e60a13;
+        }
+      }
+      span {
+        font-size: 28px;
+        color: #e60a13;
+        float: right;
+      }
+      img {
+        width: 100%;
+        border-radius: 3px;
+        padding-bottom: 5px;
+      }
+      h2 {
+        font-size: 15px;
+        padding-bottom: 8px;
+      }
+      p {
+        line-height: 42px;
+        font-size: 28px;
+        border-bottom: 2px solid #e60a13;
+      }
+    }
+  }
+}

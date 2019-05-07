@@ -1,0 +1,35 @@
+.cart-link {
+  background: none;
+  border: 0;
+  width: 35px;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+
+  .icon-cart {
+    width: 100%;
+  }
+
+  .cart-counter {
+    position: relative;
+    top: -26px;
+    font-size: 14px;
+    color: #e60a13;
+    font-weight: bold;
+  }
+}
+.layer-notification {
+  position: absolute;
+  top: 47px;
+  right: 0;
+  width: 180px;
+  background: #e60a13;
+  color: #fff;
+  padding: 15px 26px;
+  display: none;
+  &.is-shown {
+    display: block;
+  }
+}
