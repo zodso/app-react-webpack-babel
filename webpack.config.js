@@ -6,7 +6,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "public"),
-    filename: "bundle.[hash].js",
+    filename: "bundle.js",
     publicPath: "/"
   },
   module: {
@@ -26,7 +26,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'postcss-loader' ]
+        use: ["style-loader", "postcss-loader"]
       },
       {
         test: /\.s[c|a]ss$/,
@@ -41,9 +41,12 @@ module.exports = {
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
-          "file-loader",
           {
-            loader: "image-webpack-loader"
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: 'assets'
+            }
           }
         ]
       }
@@ -53,15 +56,17 @@ module.exports = {
     historyApiFallback: true,
     port: 3000,
     hot: true,
-    open: true
+    open: true,
+    contentBase: "./"
   },
   devtool: "inline-source-map",
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "style.[hash].css"
+      filename: "style.css"
     }),
     new HtmlWebPackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
+      favicon: "./src/favicon.ico"
     })
   ]
 };
