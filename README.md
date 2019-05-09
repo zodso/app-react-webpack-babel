@@ -1,5 +1,9 @@
 # app-react-webpack-babel
 
+## View project online
+
+* https://app-react-webpack-babel.herokuapp.com
+
 ## Features
 
 * react 16
@@ -9,6 +13,8 @@
 * redux-thunk 2
 * webpack 4
 * babel 7
+* express 4
+* firebase 5
 
 ## Installation
 
